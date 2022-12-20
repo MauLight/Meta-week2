@@ -1,0 +1,17 @@
+h1, h2 {
+    color: #333333;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1:hover, h2:hover {
+    color: #FFB330;
+}
+
+img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+
+  img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }

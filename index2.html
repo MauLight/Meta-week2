@@ -5,25 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>MAU RESTAURANT</title>
 </head>
 
 <body>
-    <h1>Menu</h1>
-    <div>
-        <img src="https://www.foodandwine.com/thmb/Mgm2FA2wprdnvhHvd4kbGG01ie8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Pasta-Bolognese-FT-RECIPE0822-2000-7f0b9f0780c2489eb9aeea1926a8b14a.jpg"
-            width="240" height="135" alt="a pasta plate">
-        <h2>Pasta bolognese</h2>
-        <p>Some shit inside</p>
+    <div class="container-fluid text-center">
+        <h1 class="mt-3">Menu</h1>
+        <div class="row d-flex">
+            <div class="col d-flex justify-content-center">
+                <div class="m-2 text-center">
+                    <img class="rounded-3" src="https://www.foodandwine.com/thmb/Mgm2FA2wprdnvhHvd4kbGG01ie8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Pasta-Bolognese-FT-RECIPE0822-2000-7f0b9f0780c2489eb9aeea1926a8b14a.jpg"
+                        width="240" height="135" alt="a pasta plate">
+                    <h2 class="mt-3">Pasta bolognese</h2>
+                    <p>Some shit inside</p>
+                </div>
+                <div class="m-2 text-center">
+                    <img class="rounded-3" src="https://modernfarmer.com/wp-content/uploads/2014/07/photo-1.jpg" width="240" height="135"
+                        alt="a fish head">
+                    <h2 class="mt-3">Fish head</h2>
+                    <p>Some other shit</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="https://modernfarmer.com/wp-content/uploads/2014/07/photo-1.jpg" width="240" height="135" alt="a fish head">
-        <h2>Fish head</h2>
-        <p>Some other shit</p>
-    </div>
+
+
     <div>
         <style>
-            table, th, td {
+            table,
+            th,
+            td {
                 border: solid 1px black;
                 /*border-collapse: collapse;*/
             }
@@ -42,6 +58,17 @@
                 <td>$2</td>
             </tr>
         </table>
+    </div>
+    <div style="padding: 10px;">
+        <form action="/registration" method="post">
+            <label>Username</label>
+            <input type="text" name="username" />
+            <label>Email</label>
+            <input type="email" name="email" />
+            <label>Password</label>
+            <input type="password" name="password" />
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <div class="main">
